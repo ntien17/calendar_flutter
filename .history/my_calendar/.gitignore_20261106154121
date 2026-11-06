@@ -1,0 +1,99 @@
+```gitignore
+# ==========================================
+# 1. Secrets - Thông tin bí mật
+# ==========================================
+.env
+.env.*
+!.env.example
+!.env.sample
+
+# Private keys and certificates
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+secrets/
+private/
+
+# ==========================================
+# 2. Flutter / Dart
+# ==========================================
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub/
+.pub-cache/
+build/
+coverage/
+.flutter-coverage
+**/doc/api/
+
+# Generated files
+*.g.dart
+*.freezed.dart
+
+# Lưu ý: Chỉ bỏ qua *.g.dart và *.freezed.dart
+# nếu đây là các file sinh tự động trong dự án.
+
+# ==========================================
+# 3. Flutter platform build artifacts
+# ==========================================
+/android/app/debug/
+/android/app/profile/
+/android/app/release/
+/ios/Flutter/.last_build_id
+
+# ==========================================
+# 4. IDE / Editor
+# ==========================================
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Giữ cấu hình VS Code nếu cần chia sẻ cho nhóm.
+# Bỏ dấu # nếu muốn bỏ qua toàn bộ thư mục:
+# .vscode/
+
+# ==========================================
+# 5. Logs / temporary files
+# ==========================================
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+*.bak
+*.old
+.DS_Store
+Thumbs.db
+
+# ==========================================
+# 6. Operating systems
+# ==========================================
+.Trashes/
+.Spotlight-V100/
+.fseventsd/
+Desktop.ini
+
+# ==========================================
+# 7. Miscellaneous
+# ==========================================
+.atom/
+.build/
+.buildlog/
+.history/
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# ==========================================
+# 8. Test artifacts
+# ==========================================
+/test-results/
+/playwright-report/
+```
